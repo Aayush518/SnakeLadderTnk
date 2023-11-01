@@ -1,10 +1,9 @@
-
 class GameBoard:
     def __init__(self, width, height, size):
         self.width = width
         self.height = height
         self.size = size
-        self.grid = [[Cell(x, y, size) for y in range(height)] for x in range(width)]
+        self.grid = [[Cell(x, y, size) for x in range(width)] for y in range(height)]
 
     def draw(self, canvas):
         for row in self.grid:
