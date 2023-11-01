@@ -1,3 +1,4 @@
+from cell import Cell
 class GameBoard:
     def __init__(self, width, height, size):
         self.width = width
